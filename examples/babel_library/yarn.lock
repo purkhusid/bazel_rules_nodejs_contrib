@@ -625,6 +625,11 @@
     "@babel/preset-env" "^7.1.0"
     commander "^2.19.0"
 
+"@bazel/hide-bazel-files@0.32.1":
+  version "0.32.1"
+  resolved "https://registry.yarnpkg.com/@bazel/hide-bazel-files/-/hide-bazel-files-0.32.1.tgz#05a358b7df0e8bdb39bb104c5f063dc2bb09f164"
+  integrity sha512-8825JCnpr30W3GpRbVvEuKe0C2M/7MbAVn082G+XRf0j6EvF2NScuog8U1UQU1J/9LUY3iaMCEAnFTSqxlSCfw==
+
 ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"

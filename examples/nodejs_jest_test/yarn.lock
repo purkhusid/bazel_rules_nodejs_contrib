@@ -18,6 +18,11 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@bazel/hide-bazel-files@0.32.1":
+  version "0.32.1"
+  resolved "https://registry.yarnpkg.com/@bazel/hide-bazel-files/-/hide-bazel-files-0.32.1.tgz#05a358b7df0e8bdb39bb104c5f063dc2bb09f164"
+  integrity sha512-8825JCnpr30W3GpRbVvEuKe0C2M/7MbAVn082G+XRf0j6EvF2NScuog8U1UQU1J/9LUY3iaMCEAnFTSqxlSCfw==
+
 abab@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.0.tgz#aba0ab4c5eee2d4c79d3487d85450fb2376ebb0f"

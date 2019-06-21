@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@bazel/hide-bazel-files@0.32.1":
+  version "0.32.1"
+  resolved "https://registry.yarnpkg.com/@bazel/hide-bazel-files/-/hide-bazel-files-0.32.1.tgz#05a358b7df0e8bdb39bb104c5f063dc2bb09f164"
+  integrity sha512-8825JCnpr30W3GpRbVvEuKe0C2M/7MbAVn082G+XRf0j6EvF2NScuog8U1UQU1J/9LUY3iaMCEAnFTSqxlSCfw==
+
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-4.2.3.tgz#36f8b22df5a0efaa81373109851e1d857aca6bed"
