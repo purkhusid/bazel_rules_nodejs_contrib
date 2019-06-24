@@ -16,6 +16,7 @@ workspace(
     name = "ecosia_bazel_rules_nodejs_contrib",
     managed_directories = {
         "@npm": ["examples/babel_library/node_modules"],
+        "@jest_node_test_example_deps": ["examples/jest_node_test/node_modules"],
         "@nodejs_jest_test_example_deps": ["examples/nodejs_jest_test/node_modules"],
         "@vue_component_deps": ["internal/vue_component/node_modules"],
         "@toml_to_js_deps": ["examples/toml_to_js/node_modules"],
@@ -95,6 +96,10 @@ go_register_toolchains()
 load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
 
 gazelle_dependencies()
+
+load("//examples/jest_node_test:deps.bzl", "jest_node_test_example_dependencies")
+
+jest_node_test_example_dependencies()
 
 load("//examples/nodejs_jest_test:deps.bzl", "nodejs_jest_test_example_dependencies")
 
