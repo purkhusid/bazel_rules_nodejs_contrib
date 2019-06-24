@@ -37,9 +37,9 @@ http_archive(
 
 http_archive(
     name = "build_bazel_rules_nodejs",
-    sha256 = "ccb212e1c7951e577810486918d16cd93ab21a0cb89735c83d24344043aceddb",
-    strip_prefix = "rules_nodejs-0.32.1",
-    urls = ["https://github.com/bazelbuild/rules_nodejs/archive/0.32.1.tar.gz"],
+    sha256 = "0c78dd9ca95d0eedb790e11550c3ee6412b585f6d4eae2c2250d2d7511d43cd9",
+    strip_prefix = "rules_nodejs-0.32.2",
+    urls = ["https://github.com/bazelbuild/rules_nodejs/archive/0.32.2.tar.gz"],
 )
 
 load("@build_bazel_rules_nodejs//:defs.bzl", "node_repositories", "yarn_install")

@@ -4,6 +4,6 @@
         "fs-extra": "^7.0.1"
     },
     "devDependencies": {
-        "@bazel/hide-bazel-files": "0.32.1"
+        "@bazel/hide-bazel-files": "0.32.2"
     }
 }

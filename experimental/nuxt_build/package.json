@@ -11,6 +11,6 @@
         "babel-loader": "^7.1.5"
     },
     "devDependencies": {
-        "@bazel/hide-bazel-files": "0.32.1"
+        "@bazel/hide-bazel-files": "0.32.2"
     }
 }
