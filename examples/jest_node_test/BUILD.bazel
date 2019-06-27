@@ -1,4 +1,4 @@
-load("@ecosia_bazel_rules_nodejs_contrib//:defs.bzl", "vue_component", "babel_library")
+load("@ecosia_bazel_rules_nodejs_contrib//:defs.bzl", "babel_library", "vue_component")
 load("@ecosia_bazel_rules_nodejs_contrib//examples/jest_node_test:jest.bzl", "jest_node_test")
 
 # TODO: Make the whole interoperability of vue_component, babel_library and jest_node_test nicer.
@@ -21,7 +21,6 @@ babel_library(
     srcs = ["component.test.js"],
 )
 
-
 jest_node_test(
     name = "component_test",
     srcs = [":component_test_babel"],
@@ -38,6 +37,24 @@ jest_node_test(
     srcs = ["sum.test.js"],
     deps = [
         "sum.js",
+    ],
+    tags = ["ibazel_notify_changes"],
+)
+
+babel_library(
+    name = "bs_test_babel",
+    srcs = ["BsJest_test.bs.js"],
+    deps = [
+        "@jest_node_test_example_deps//@glennsl/bs-jest",
+        "@jest_node_test_example_deps//bs-platform",
+    ],
+)
+
+jest_node_test(
+    name = "bs_test",
+    srcs = [":bs_test_babel"],
+    deps = [
+        "@jest_node_test_example_deps//@glennsl/bs-jest",
     ],
     tags = ["ibazel_notify_changes"],
 )

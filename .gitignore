@@ -3,3 +3,6 @@ node_modules
 
 go.sum
 go.mod
+
+examples/jest_node_test/lib
+examples/jest_node_test/.merlin
